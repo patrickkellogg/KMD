@@ -1,0 +1,61 @@
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Kellogg Munder Difflin</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="kmd.css" />
+  </head>
+  <body onload="startPage()">
+    <header>
+      <div class="shark">
+        <img src="images/sharkleft.jpg">
+      </div>
+      <div>
+        <img src="images/sharkmiddle.jpg">
+      </div>
+      <div class="shark">
+        <img src="images/sharkright.jpg">
+      </div>
+    </header>
+    <div class="container">
+      <div class="blankcol"> <!-- blankcol -->
+      </div> <!-- blankcol -->
+      <div class="middlecol"> <!-- middlecol -->
+        <summary>
+          <h2>
+            Some companies sell you paper. We sell you lines.
+          </h2>
+        </summary>
+        <section>
+          <form action="done.htm">
+            <div>
+              <h3 id="statusmessage">
+                Your Order
+              </h3>
+            </div>
+            <div>
+              <ul id="orderfull">
+              </ul> <!-- orderfull -->
+            </div>
+            <div id="orderbottom">
+              <input type="submit" id="submitme" class="mybutton" value="Submit Order">
+            </div> <!-- orderbottom -->
+            <input type="hidden" id="hiddenlist" name="orderlist" value="">
+          </form>
+          <div id="clearbottom">
+              <button id="clearme" class="mybutton" onclick="clearList()">Clear List</button>
+          </div> <!-- clearbottom -->
+        </section>
+        <figure class="main-grid" id="productlist">
+        </figure>
+      </div> <!-- middlecol -->
+      <div class="blankcol"> <!-- blankcol -->
+      </div> <!-- blankcol -->
+    </div> <!-- class="container" -->
+    <div id="overlay" onmousemove="zoomIn()"></div>
+  </body>
+</html>
+
+<script src="kmdprodlist.js"></script>
+<script src="kmd.js"></script>

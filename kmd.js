@@ -89,6 +89,7 @@ function showUL() {
     document.getElementById("submitme").style.opacity = 1;
     document.getElementById("submitme").style.cursor = "allowed";
     document.getElementById("statusmessage").innerHTML = "Your Order";
+    document.getElementById("statusmessage").style.color = "black";
 
   } else {
     document.getElementById("clearme").disabled = true;
@@ -98,6 +99,7 @@ function showUL() {
     document.getElementById("submitme").style.opacity = 0.25;
     document.getElementById("submitme").style.cursor = "not-allowed";
     document.getElementById("statusmessage").innerHTML = "Click on a page below to add to order";
+    document.getElementById("statusmessage").style.color = "blue";
   }
 
   let buildlist = "";
@@ -116,6 +118,7 @@ function showUL() {
   }
 
   document.getElementById("hiddenlist").value = buildlist;
+  localStorage.setItem("storageorderlist", buildlist);
 }
 
 function showGrid() {
